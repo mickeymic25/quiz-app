@@ -20,8 +20,53 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer base {
+  :root {
+    --radius: 0.5rem;
   }
+}
+
+.btn {
+  @apply font-bold py-2 px-4 rounded;
+}
+.btn-primary {
+  @apply bg-red-500 text-white;
+}
+.btn-primary:hover {
+  @apply bg-red-700;
+}
+.game-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.question-container {
+  width: 500px;
+  height: 500px;
+  @apply bg-white;
+}
+.text-primary {
+  @apply text-red-700;
+}
+.quiz-title {
+  @apply text-center p-2  text-3xl font-bold;
+}
+
+.quiz-question {
+  @apply py-4 px-2  text-xl  bg-red-700;
+}
+
+.answer-prefix {
+  @apply bg-red-700 p-6 uppercase text-white;
+}
+.quiz-answer {
+  @apply text-red-700 py-4 m-4;
+}
+.quiz-answer:hover {
+  @apply text-green-700;
+}
+.quiz-answer:hover .answer-prefix {
+  @apply bg-green-700;
 }
