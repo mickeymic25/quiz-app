@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -20,8 +15,68 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer base {
+  :root {
+    --radius: 0.5rem;
   }
+}
+
+.btn {
+  @apply font-bold py-2 px-4 rounded m-4;
+}
+.btn-primary {
+  @apply bg-red-500 text-white;
+}
+.btn-primary:hover {
+  @apply bg-red-700;
+}
+.game-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("/images/main-bg.svg");
+  background-size: cover;
+  background-position: center;
+}
+.question-container {
+  @apply bg-white m-1;
+}
+.text-primary {
+  @apply text-red-700;
+}
+.quiz-title {
+  @apply text-center p-2  text-3xl font-bold;
+}
+
+.quiz-question {
+  @apply py-4 px-2  text-xl  bg-red-700;
+}
+
+.answer-prefix {
+  @apply bg-red-700 p-6 uppercase text-white;
+}
+.quiz-answer {
+  @apply text-red-700 py-4 m-4;
+}
+.quiz-answer:hover {
+  @apply text-green-700;
+}
+.quiz-answer:hover .answer-prefix {
+  @apply bg-green-700;
+}
+.submit {
+  display: flex;
+  justify-content: center;
+}
+.submit:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.3);
+}
+.header {
+  font-family: "Courier New", Courier, monospace;
+
+  font-weight: 900;
 }
