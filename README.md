@@ -104,8 +104,10 @@ bash
 npm start
 ```
 
-## 🌐 Deployment
-
-This project is deployed using Vercel.
-
-Vercel automatically detects Next.js and applies the correct build settings. No extra configuration is required.
+## 🧠 Learning Outcomes
+- Working with external APIs in Next.js
+- Creating custom React hooks
+- Managing state and side effects with React hooks
+- Component-based UI architecture
+- Responsive design with Tailwind CSS
+- Deploying Next.js applications with Vercel
