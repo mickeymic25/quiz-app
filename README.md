@@ -65,6 +65,7 @@ git clone https://github.com/mickeymic25/quiz-app.git
 Navigate to the project folder:
 ```
 bash
+
 cd quiz-app
 ```
 
@@ -78,6 +79,7 @@ npm install
 Start the development server:
 ```
 bash
+
 npm run dev
 ```
 
@@ -98,6 +100,7 @@ npm run build
 Start the production server:
 ```
 bash
+
 npm start
 ```
 
